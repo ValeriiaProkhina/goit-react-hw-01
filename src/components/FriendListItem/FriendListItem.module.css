@@ -1,0 +1,20 @@
+.container {
+  text-align: center;
+}
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.online {
+  font-size: 10px;
+  color: #090;
+}
+.offline {
+  font-size: 10px;
+  color: #f00;
+}
+.img {
+  margin-bottom: 7px;
+}

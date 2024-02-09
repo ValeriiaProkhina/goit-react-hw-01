@@ -1,0 +1,25 @@
+.container {
+  border-collapse: collapse;
+  font-size: 10px;
+  font-weight: 400;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.head {
+  background-color: #292929;
+  color: #fff;
+}
+.item:nth-child(2n + 1) {
+  background-color: #ccc;
+}
+
+.text::first-letter {
+  text-transform: uppercase;
+}
+.text {
+  border: 1px solid #000;
+}
+.bold {
+  font-weight: 600;
+}

@@ -13,7 +13,6 @@
 .item:nth-child(2n + 1) {
   background-color: #ccc;
 }
-
 .text::first-letter {
   text-transform: uppercase;
 }

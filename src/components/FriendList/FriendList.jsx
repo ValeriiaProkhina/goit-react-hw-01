@@ -1,4 +1,3 @@
-// import { FriendListItem } from "./FriendListItem"
 import clsx from "clsx";
 import css from "./FriendList.module.css";
 import { FriendListItem } from "../FriendListItem/FriendListItem";

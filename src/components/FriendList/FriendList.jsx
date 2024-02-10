@@ -6,11 +6,7 @@ export const FriendList = ({ friends }) => {
   return (
     <ul className={clsx(css.list)}>
       {friends.map((friend) => {
-        return (
-          <li className={clsx(css.item)} key={friend.id}>
-            <FriendListItem {...friend} />
-          </li>
-        );
+        return <FriendListItem key={friend.id} {...friend} />;
       })}
     </ul>
   );

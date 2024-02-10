@@ -11,17 +11,17 @@ export const TransactionHistory = ({ items }) => {
           <th className={clsx(css.text, css.bold)}>Currency</th>
         </tr>
       </thead>
-      {items.map((item) => {
-        return (
-          <tbody className={clsx(css.item)} key={item.id}>
-            <tr>
-              <td className={clsx(css.text)}>{item.type}</td>
-              <td className={clsx(css.text)}>{item.amount}</td>
-              <td className={clsx(css.text)}>{item.currency}</td>
+      <tbody className={clsx(css.item)}>
+        {items.map(({ id, type, amount, currency }) => {
+          return (
+            <tr key={id}>
+              <td className={clsx(css.text)}>{type}</td>
+              <td className={clsx(css.text)}>{amount}</td>
+              <td className={clsx(css.text)}>{currency}</td>
             </tr>
-          </tbody>
-        );
-      })}
+          );
+        })}
+      </tbody>
     </table>
   );
 };
